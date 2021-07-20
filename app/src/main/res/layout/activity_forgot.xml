@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayoutForgot"
+    tools:context=".activity.ForgotActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:id="@+id/layoutForgot">
+
+        <ImageView
+            android:id="@+id/imageForgot"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/hunger2"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="50dp"
+            />
+        <TextView
+            android:id="@+id/txtforgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageForgot"
+            android:text="Enter Your Registered Mobile Number and Email Below:"
+            android:layout_marginTop="20dp"
+
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:textColor="#ffffff"
+            android:padding="7dp"/>
+        <EditText
+            android:id="@+id/editText1Forgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtforgot"
+            android:hint="Mobile Number(10 digits)"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:inputType="number"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#ffffff"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_mobile"
+            android:drawablePadding="3dp"
+            android:padding="10dp"
+            />
+        <EditText
+            android:id="@+id/editText2Forgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText1Forgot"
+            android:hint="Email Address"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:inputType="text"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#ffffff"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="3dp"
+            android:padding="10dp"
+            />
+        <Button
+            android:id="@+id/buttonForgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText2Forgot"
+            android:text="Next"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffffff"
+            android:background="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
